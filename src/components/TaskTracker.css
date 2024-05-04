@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.App{
+    height: 95vh;
+    width:65vw;
+    box-shadow: 1px -1px 3px violet;
+    
+}
+
+@media only screen and (max-width:600px){
+
+    .App{
+        height: 95vh;
+        width:75vw;
+        box-shadow: 1px -1px 3px violet;
+    }
+
+    .stick h1{
+        font-size: 20px;
+        margin:10px ;
+    }
+
+    .App .stick .inputtxt{
+        height: 25px;
+        padding: 5px;
+        width:90px;
+        margin:0px  auto;
+    }
+    .App .stick .inputtxt::placeholder{
+        font-size: smaller;
+    }
+
+    .stick .add{
+        height: 25px;
+        width:60px;
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+
+    .filters .filter{
+        width: 70%;
+        
+
+    }
+
+    .filters .filter label{
+        font-size: 12px;
+        margin: 10px 5px 0px 10px;
+    }
+
+    .filters .filter select{
+        height:20px;
+        width:70px;
+    }
+
+    .filters .filter select option{
+        color: brown;
+        font-size: 12px;
+    }
+
+    .task-list{
+        display: flex;
+        margin-left: 5px;
+    }
+
+    .task-list .task{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .task-list .task span{
+        font-size:13px;
+        margin: 0px;
+        width:190px;
+        display: flex;
+        text-align: start;
+    }
+    
+    .task-list .btn1{
+        display: none;
+    }
+
+    .task-list .btn2{
+        height:33px;
+        width:60px;
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size:x-small;
+        font-weight: 500;
+    }
+
+    
+}
+
+
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    color: blueviolet;
+    
+}
+
+.App .inputtxt{
+    margin: 30px 30px 25px 100px;
+    height: 40px;
+    width:370px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.add{
+    height: 40px;
+    width:150px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(64, 64, 255);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.add:hover{
+    background-color: blue;
+}
+
+.filters{
+    overflow: scroll;
+    height:73vh;
+}
+
+.filter {
+    margin-top: -5px;
+    margin-left: 15px;
+    position: fixed;
+    background-color: white;
+    width: 62vw;
+}
+
+.filter label{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.filter select{
+    height:30px;
+    width:120px;
+}
+
+.filter select option{
+color: brown;
+font-size: 20px;
+}
+
+
+
+.task-list{
+    margin-left: 30px;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.task-list .task{
+    display: flex;
+    padding: 0px 10px;
+    height: 38px;
+    width:60vw;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color:rgb(231, 231, 231);
+
+}
+
+.task-list .task span{
+    margin:6px;
+}
+.buttons{
+    display: flex;
+    height:37px;
+
+}
+
+.btn1{
+    height:37px;
+    width:70px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn2{
+    height:37px;
+    width:130px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: black;
+    color: white;
+}
+
